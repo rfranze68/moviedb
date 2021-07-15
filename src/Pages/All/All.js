@@ -1,7 +1,5 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
-import { withRouter } from 'react-router-dom';
-
 import ContentCard from "../../components/ContentCard";
 import ContentPagination from "../../components/ContentPagination";
 
