@@ -1,0 +1,102 @@
+.row {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  margin-left: 6px;
+  margin-right: 6px;
+  background-color: #373b69;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  position: relative;
+  display: flexbox;
+  width: 320px;
+  max-width: 320x;
+  height: 140px;
+  max-height: 140px;
+}
+
+.row:hover {
+  background-color: #8185b4;
+}
+
+.rowImg {
+  float: left;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-top: 10px;  
+  width: 130px;
+  max-width: 130px;
+  height:100%;
+  max-height: 100%;
+}
+
+.rowImg img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;  
+}
+
+.rowInfo {
+  float: left;
+  display: flex;
+  align-items: left;
+  padding-left: 0px;
+  padding-top: 5px;  
+  width: calc(100%px - 160px);
+  max-width: calc(100%px - 160px);
+  height:100%;
+  max-height: 100%;
+  color: #fff;
+}
+
+.rowInfo hp {
+  padding-top:100px;
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.rowInfo hg {
+  padding-top: 10px;
+  color:rgb(10, 206, 10);
+  font-weight:bold;
+}
+
+.cardOver {
+  background-color: #fff;
+  border-top-left-radius: 3px;
+  border-top-right-radius: 3px;
+  box-shadow: 0px -3px 5px rgba(0, 0, 0, 0.1);
+  color: #22254b;
+  position: absolute;
+  padding: 1rem;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  overflow: auto;
+  max-height: 100%;
+  transform: translateY(102%);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover .cardOver {
+  transform: translateY(0%);
+}
+
+.tag {
+  background-color: #22254b;
+  border-radius: 5px;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+
+.tag.green {
+  color: rgb(10, 206, 10);
+}
+
+.tag.orange {
+  color: orange;
+}
+
+.tag.red {
+  color: red;
+}
