@@ -32,7 +32,7 @@ const All = (props) => {
   useEffect(() => {
     window.scroll(0, 0);
     fetchAll();
-  }, [page, props.API_URL]);
+  }, [,page, props.API_URL]);
 
   const setVoteClass = (vote) => {
     if (vote >= 8) { return 'green'; }
