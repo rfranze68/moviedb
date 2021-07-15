@@ -1,6 +1,6 @@
 import './App.css';
 import React from "react";
-import { Router, Route, Switch } from 'react-router-dom';
+import { Router, Redirect, Route, Switch } from 'react-router-dom';
 
 import Header from './components/Header';
 import All from './Pages/All/All';
@@ -173,10 +173,13 @@ class App extends React.Component {
               <Persons key={1401} API_URL={this.state.searchUrl}
                        API_URL_OPTIONS={this.state.searchUrlOptions}
                        API_IMAGES={API_IMAGES}/></Route>
-            <Route path='/' exact>
+            <Route path='/' exact >
               <All key={1101} API_URL={this.state.searchUrl}
                    API_URL_OPTIONS={this.state.searchUrlOptions}
                    API_IMAGES={API_IMAGES}/></Route> 
+            <Route path='/'>
+              <Redirect to='/' />
+            </Route> 
           </Switch>
         </Container>       
       </div>
